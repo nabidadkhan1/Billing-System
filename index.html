@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Restaurant Billing</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1>Online Order</h1>
+
+        <!-- Personal Info -->
+        <div class="form-container">
+            <div class="personal-info">
+                <h2>Customer Info</h2>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" placeholder="Enter your name">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+
+
+            <!-- Order Info -->
+            <div class="order-info">
+                <h2>Your Order</h2>
+                <label for="samosaQty">Samosa (Rs.30):</label>
+                <input type="number" id="samosaQty" placeholder="Enter the quantity">
+                <label for="cheeseRollQty">Cheese Roll (Rs.150):</label>
+                <input type="number" id="cheeseRollQty" placeholder="Enter the quantity">
+                <label for="parathaQty">Paratha (Rs.50):</label>
+                <input type="number" id="parathaQty" placeholder="Enter the quantity">
+                <label for="chaiQty">Chai (Rs.60):</label>
+                <input type="number" id="chaiQty" placeholder="Enter the quantity">
+            </div>
+        </div>
+        
+
+
+        <!-- Bill Container -->
+        <div class="bill">
+            <h2>Bill</h2>
+            <p>Your Name: <span id="billName"></span></p>
+            <p>Your Email: <span id="billEmail"></span></p>
+
+
+            <!-- Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Menu</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Samosa</td>
+                        <td>30</td>
+                        <td><span id="samosaQtyBill"></span></td>
+                        <td><span id="samosaAmount"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Cheese Roll</td>
+                        <td>150</td>
+                        <td><span id="cheeseRollQtyBill"></span></td>
+                        <td><span id="cheeseRollAmount"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Paratha</td>
+                        <td>50</td>
+                        <td><span id="parathaQtyBill"></span></td>
+                        <td><span id="parathaAmount"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Chai</td>
+                        <td>60</td>
+                        <td><span id="chaiQtyBill"></span></td>
+                        <td><span id="chaiAmount"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Total Amount -->
+            <h3>Total Amount: <span id="totalAmount"></span></h3>
+        </div>
+    </div>
+
+
+<!-- Javascript Link -->
+ <script src="script.js"></script>
+
+</body>
+
+</html>
